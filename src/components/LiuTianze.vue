@@ -1,5 +1,6 @@
 <template>
   <div class="my">
+
     <div class="myinfo">
       <div class="name"><span>刘</span><span>天</span><span>泽</span></div>
       <div class="namespell">
@@ -25,29 +26,42 @@
       </ul> -->
       </div>
     </div>
-    <div class="description">
-        一名不断学习的{{ occupation[0] }}
+    <div class="description">一名不断学习的{{ occupation[0] }}</div>
+    <div class="background">
+      <img id="bg" src="../assets/photos/sau-pinecone-square.png" alt="" />
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            occupation:["学生"],
-        }
-    }
+  data() {
+    return {
+      occupation: ["学生"],
+    };
+  },
 };
 </script>
 
 <style>
-.my{
-    display: flex;
-    flex-direction: column;
+
+#bg {
+  width: 300px;
+  height: auto;
+}
+.my {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+.my .background {
+  z-index: -1;
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  display: block;
 }
 .myinfo {
   width: 120px;
@@ -75,6 +89,7 @@ export default {
   display: inline;
   font-size: 18px;
   font-family: consolas;
+  text-align: center;
 }
 .namespell ul {
   display: grid;
@@ -100,12 +115,11 @@ export default {
     display: table-cell;
     list-style:none;
 } */
-.description{
-    display: flex;
-    display: incline;
+.description {
+  display: flex;
+  display: incline;
   font-size: 46px;
   font-family: 黑体;
-/*     justify-content: center; */
+  /*     justify-content: center; */
 }
-
 </style>
