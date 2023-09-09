@@ -1,1 +1,0 @@
-import{_ as t,o as s,c,a as e}from"./index-0789bb8b.js";const _={},a={class:"about"},o=e("div",null,[e("div",{class:"createtime"},"2023年9月6日"),e("h1",null,"此网站通过Vue构建"),e("div",{class:"details"})],-1),n=[o];function l(d,i){return s(),c("div",a,n)}const u=t(_,[["render",l]]);export{u as default};
