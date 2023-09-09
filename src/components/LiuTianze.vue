@@ -59,8 +59,9 @@ export default {
 .my .background {
   z-index: -1;
   position: absolute;
-  left: 40px;
-  bottom: 20px;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
   display: block;
 }
 .myinfo {
